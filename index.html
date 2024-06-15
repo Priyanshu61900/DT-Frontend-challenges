@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Project Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="menu-button">☰</button>
+        <div>
+            <img style="margin: left 200px;" src="logo5.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-section">
+            <h2>Technical Project Management</h2>
+            <p>As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring,</p>
+            <p>controlling and completion. How? Do you want to manage each and every step of your life?</p>
+            <button class="submit">Submit task</button>
+        </div>
+        <div class="container">
+            <div class="section video-section">
+                <h2>Technical Project Management</h2>
+                <p>Description: Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Fv1L6G5_Cgk?si=m_2hEhC9c7RpB3z0&amp;start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="section">
+                <h2>Threadbuild</h2>
+                <p>Description: Watch the video and threadbuild, and jot out key threads while watching the video</p>
+                <h3>Thread A</h3>
+                <textarea placeholder="Sub-thread 1"></textarea>
+                <textarea placeholder="Sub Interpretation 1"></textarea>
+                <button>Add Sub-thread</button>
+                <textarea placeholder="Summary for Thread A"></textarea>
+            </div>
+            <div class="section">
+                <h2>Structure your Pointers</h2>
+                <p>Description: Write a 300 - 400 word article from your thread. Publish your understanding and showcase your understanding to the entire world</p>
+                <input type="text" placeholder="Title">
+                <textarea placeholder="Content"></textarea>
+                <button>Submit</button>
+            </div>
+            <div class="section">
+                <h2>4SA Method</h2>
+                <p>Description: To explore more read more</p>
+                <h3>Introduction</h3>
+                <p>The 4SA Method, How to bring an idea into progress?</p>
+                <h3>Thread A</h3>
+                <p>How are you going to develop your strategy? Which method are you going to use to develop a strategy? What if the project is lengthy?</p>
+                <p>Example 1: You have a concept, How will you put it into progress?</p>
+            </div>
+        </div>
+    </main>
+    <div class="icon-button">
+        <a href="#" title="Help">?</a>
+        <a href="#" title="Users">👥</a>
+        <a href="https://www.bing.com/ck/a?!&&p=b691145980063de2JmltdHM9MTcxNzg5MTIwMCZpZ3VpZD0zOGE1MWNjZC0yYzYwLTYwNWQtMTJjZS0wZjYyMmRiZDYxMTgmaW5zaWQ9NTIyOA&ptn=3&ver=2&hsh=3&fclid=38a51ccd-2c60-605d-12ce-0f622dbd6118&psq=calender&u=a1aHR0cHM6Ly9jYWxlbmRhci5nb29nbGUuY29tLw&ntb=1" title="Calendar">📅</a>
+    </div>
+    <div id="side-menu" class="side-menu">
+        <a href="#" class="close-btn">&times;</a>
+        <ul>
+            <h1><a href="#"><b>JOURNEY BOARD</b></a></h1>
+            <li><a href="#">Explore the world of management</a></li>
+            <li><a href="#">Technical Project Management</a></li>
+            <li><a href="#">Threadbuild</a></li>
+            <li><a href="#">Structure your pointers</a></li>
+            <li><a href="#">4SA Method</a></li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('side-menu').style.width = '250px';
+        });
+
+        document.querySelector('.close-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('side-menu').style.width = '0';
+        });
+
+        document.querySelectorAll('.submit').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Task Submitted!');
+            });
+        });
+    </script>
+</body>
+</html>
